@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColore"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/top"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="55dp"
+                android:background="@drawable/list" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="55dp"
+                android:background="@drawable/gare" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="9dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="AdeebTechnologyLab"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="office is ➙ "
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/Disconnected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disconnected"
+                android:textColor="@color/Red"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/mic" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/spiker" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/dill" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/chat" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/profile" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/timedate"
+        android:layout_marginTop="-20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Time:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Date"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/temperatureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Temperature:"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/timedate">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/light_off"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/light_off"/>
+
+            <Button
+                android:id="@+id/light_on"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/light_on"
+                android:visibility="gone"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/fan_off"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/fan_off"/>
+
+            <Button
+                android:id="@+id/fan_on"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/fan_on"
+                android:visibility="gone"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/hardwear_off"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/hardwear_off"/>
+
+            <Button
+                android:id="@+id/hardwear_on"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/hardwear_on"
+                android:visibility="gone"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/studio_off"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/studio_off"/>
+
+            <Button
+                android:id="@+id/studio_on"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/studio_on"
+                android:visibility="gone"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/classRoom_off"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/classroom_off"/>
+
+            <Button
+                android:id="@+id/classRoom_on"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/classroom_on"
+                android:visibility="gone"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/led_off"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/light_off"/>
+
+            <Button
+                android:id="@+id/led_on"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/light_on"
+                android:visibility="gone"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/printer_off"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/pprinter_of"/>
+
+            <Button
+                android:id="@+id/printer_on"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/printer_on"
+                android:visibility="gone"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/ledName_off"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/leed_name_off"/>
+
+            <Button
+                android:id="@+id/ledName_on"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/leds_name_on"
+                android:visibility="gone"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingTop="2dp"
+        android:background="@drawable/end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/connect_bt"
+            android:layout_marginLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blu"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/all_off"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:background="@drawable/all_off"/>
+
+        <Button
+            android:id="@+id/all_on"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/all_on"
+            android:visibility="gone"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/exe_bt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/exe"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
